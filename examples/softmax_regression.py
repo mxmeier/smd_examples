@@ -231,8 +231,8 @@ class SoftmaxClassifier(object):
         return Xs, Ys
 
     def generate_two_pop(self):
-        P0 = np.load('P0.npy')
-        P1 = np.load('P1.npy')
+        P0 = np.load('data/P0.npy')
+        P1 = np.load('data/P1.npy')
 
         Xs = np.append(P0.T, P1.T, axis=0)
         Ys = np.append(np.zeros(P0.shape[1], dtype=np.int),
